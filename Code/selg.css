@@ -1,0 +1,217 @@
+/* Nullstiller margin og padding for alle elementer og setter maksimal høyde til 800px */
+* {
+    margin: 0;
+    padding: 0;
+    max-height: 800px; /* ønsket høyde */
+}
+
+/* Hindrer horisontal scrollbar */
+body {
+    overflow-x: hidden;
+}
+
+/* Navbar-styler */
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "tittel kontakt om søk"; 
+    position: relative;
+    top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Fjerner understrekninger fra lenker og setter teksten til svart */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Tittel i navbar */
+#tittel {
+    grid-area: tittel;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    left: 70px;
+}
+
+/* Kontaktseksjon i navbar */
+#kontakt {
+    grid-area: kontakt;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    font-weight: normal;
+}
+
+/* Om-seksjon i navbar */
+#om {
+    grid-area: om;
+    display: flex;
+    align-items: top;
+    position: relative;
+    left: 40px;
+    font-weight: normal;
+}
+
+/* Søkefelt i navbar */
+#søk {
+    grid-area: søk;
+    display: flex;
+    align-items: top;    
+}
+
+/* Søkefelt-styling */
+#searchInput {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+/* Nederste navigasjonslinje */
+.underbar {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "selg bruktbiler verksted"; 
+    color: white;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    position: relative;
+    top: 31px;
+}
+
+/* Stiler for "Selg" i den nederste navigasjonslinjen */
+#selg {
+    display: flex;
+    align-items: center;
+    grid-area: selg;
+    position: relative;
+    left: 200px;
+    font-weight: normal;
+}
+
+/* Stiler for "Bruktbiler" i den nederste navigasjonslinjen */
+#bruktbiler {
+    grid-area: bruktbiler;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 190px;
+    font-weight: normal;
+}
+
+/* Stiler for "Verksted" i den nederste navigasjonslinjen */
+#verksted {
+    grid-area: verksted;
+    display: flex;
+    justify-content: center;
+    font-weight: normal;
+}
+
+/* Bakgrunnsbilde-stil */
+#bakgrunn {
+    width: 1820px;
+    height: auto;
+    position: relative;
+    z-index: -1;
+}
+
+/* Tabell-stil */
+.tabell { 
+    background-color: white;
+    width: 410px;
+    padding-top: 400px; 
+    position: relative;
+    bottom: 740px;
+    left: 900px;
+}
+
+/* Tekststil for tabell */
+#tabtekst {
+    color: black;
+    position: relative;
+    bottom: 350px;
+    left: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Tekstfelt-stil */
+textarea {
+    resize: none;
+    border-radius: 5px;
+}
+
+/* Stiler for ulike input-felter */
+#navn {
+    position: relative;
+    bottom: 320px;
+    left: 30px;
+}
+
+#etternavn {
+    position: relative;
+    bottom: 320px;
+    left: 40px;
+}
+
+#epost {
+    position: relative;
+    bottom: 290px;
+    left: 30px;
+}   
+
+#telefonnummer {
+    position: relative;
+    bottom: 290px;
+    left: 40px;
+}
+
+#registernummer {
+    position: relative;
+    bottom: 260px;
+    left: 30px;
+}
+
+#merke {
+    position: relative;
+    bottom: 260px;
+    left: 40px;
+}
+
+#Bilmodell {
+    position: relative;
+    bottom: 230px;
+    left: 30px;
+}
+
+#Kilometerstand {
+    position: relative;
+    bottom: 230px;
+    left: 40px;
+}
+
+/* Knapp-stil */
+.my-button {
+    display: inline-block;
+    padding: 10px 100px;
+    font-size: 16px;
+    text-align: center; /* Midtstiller teksten horisontalt */
+    vertical-align: middle; /* Justerer vertikal plassering */
+    cursor: pointer;
+    border: 1px solid #000;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    position: relative;
+    bottom: 150px;
+    left: 70px;
+}

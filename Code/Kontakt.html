@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- Definerer dokumenttypen som HTML5 -->
+<html lang="en">
+<!-- Starter HTML-dokumentet og setter språket til engelsk -->
+<head>
+    <!-- Begynner hodet av dokumentet -->
+    <meta charset="UTF-8">
+    <!-- Setter tegnsettet til UTF-8 for å støtte alle tegn -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Gjør siden responsiv ved å sette viewport-egenskapene -->
+    <title>Document</title>
+    <!-- Setter tittelen på dokumentet -->
+    <link rel="stylesheet" href="kontakt.css">
+    <!-- Kobler til en ekstern CSS-fil for styling -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- Kobler til Leaflet.js for kart -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!-- Kobler til Leaflet.css for kart styling -->
+</head>
+<!-- Slutter hodet og starter kroppsdelen av dokumentet -->
+<body>
+    <!-- Begynner kroppsdelen av dokumentet -->
+    <div class="navbar">
+        <!-- Lager en navigasjonslinje -->
+        <h1 id="tittel"><a href="index.html">Audi</a></h1>
+        <!-- Lager en hovedtittel med lenke til forsiden -->
+        <h3 id="kontakt"><a href="Kontakt.html">kontakt oss</a></h3>
+        <!-- Lager en undertittel med lenke til kontaktsiden -->
+        <h3 id="om"><a href="om.html">Om oss</a></h3>
+        <!-- Lager en undertittel med lenke til "Om oss"-siden -->
+        <div id="søk">
+            <!-- Lager en div for søkefeltet -->
+            <input type="text" id="searchInput" placeholder="Søk...">
+            <!-- Inkluderer et tekstfelt for søk -->
+        </div>
+    </div>
+    <!-- Avslutter navigasjonslinjen -->
+
+    <div class="underbar">
+        <!-- Lager en annen navigasjonslinje under hovedlinjen -->
+        <h3 id="selg"><a href="selg.html" style="color: white;">Selg bilen din</a></h3>
+        <!-- Lager en lenke til siden for å selge bil -->
+        <h3 id="bruktbiler"><a href="bruktbiler.html" style="color: white;">Bruktbiler</a></h3>
+        <!-- Lager en lenke til siden for brukte biler -->
+    </div>
+    <!-- Avslutter undernavigasjonslinjen -->
+
+    <div class="tabell">
+        <!-- Lager en seksjon for kontaktskjema -->
+        <p id="tabtekst">Kontakt oss</p>
+        <!-- Inkluderer en tittel for kontaktskjema -->
+        <textarea id="navn" placeholder="Navn"></textarea>
+        <!-- Inkluderer et tekstområde for navn -->
+        <textarea id="etternavn" placeholder="Etternavn"></textarea>
+        <!-- Inkluderer et tekstområde for etternavn -->
+        <textarea id="epost" placeholder="E-post"></textarea>
+        <!-- Inkluderer et tekstområde for e-post -->
+        <textarea id="telefonnummer" placeholder="Telefonnummer"></textarea>
+        <!-- Inkluderer et tekstområde for telefonnummer -->
+        <textarea id="kommentar" placeholder="Skriv kommentar"></textarea>
+        <!-- Inkluderer et tekstområde for kommentarer -->
+    </div>
+    <!-- Avslutter seksjonen for kontaktskjema -->
+
+    <img id="bk" src="/Bilder/biler.jpg" alt="Bakgrunn">
+    <!-- Inkluderer et bakgrunnsbilde -->
+
+    <h1 id="tittel2">Audi Forhandler</h1>
+    <!-- Inkluderer en tittel for forhandlerseksjonen -->
+    <div class="sted">
+        <!-- Lager en seksjon for kontaktinformasjon -->
+        <p id="telefon"><b>Telefon:</b> 32 21 83 00 </p>
+        <!-- Inkluderer telefonnummer -->
+        <p id="epost2"><b>Epost:</b> firmapost.210@albjerk.no</p>
+        <!-- Inkluderer e-postadresse -->
+        <p id="adresse"><b>Adresse:</b> <a href="https://www.google.com/maps/place/Albjerk+Bil+Drammen/@59.7547444,10.1272415,16z/data=!3m1!4b1!4m6!3m5!1s0x4641230a84035cf9:0xbed0fd573028adbb!8m2!3d59.7547445!4d10.1321124!16s%2Fg%2F1tjz6jtl?entry=ttu">Ing. Rybergsgate 94-102, 3027 Drammen </a></p>
+        <!-- Inkluderer adresse med en lenke til Google Maps -->
+    </div>
+    <!-- Avslutter seksjonen for kontaktinformasjon -->
+
+    <div id="map">
+        <!-- Lager en seksjon for kartet -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4019.3624777060068!2d10.12953747701891!3d59.754744474823156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4641230a84035cf9%3A0xbed0fd573028adbb!2sAlbjerk%20Bil%20Drammen!5e0!3m2!1sno!2sno!4v1716314849039!5m2!1sno!2sno" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- Inkluderer et innebygd Google Maps-iframe for å vise kartet -->
+    </div>
+    <!-- Avslutter seksjonen for kartet -->
+
+    <script src="java.js"></script>
+    <!-- Inkluderer en ekstern JavaScript-fil -->
+</body>
+<!-- Avslutter kroppsdelen av dokumentet -->
+</html>
+<!-- Avslutter HTML-dokumentet -->

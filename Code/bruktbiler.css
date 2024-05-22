@@ -1,0 +1,355 @@
+/* Nullstiller margin og padding for alle elementer */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Hindrer horisontal scrollbar på body */
+body {
+    overflow-x: hidden;
+}
+
+/* Grid-layout for navigasjonsfeltet med fire kolonner og én rad */
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "tittel  kontakt om søk"; 
+    position: relative;
+    top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Fjerner understreking fra lenker og setter fargen til svart */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Plasserer tittel til venstre og sentrerer innholdet */
+#tittel {
+    grid-area: tittel;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    left: 70px;
+}
+
+/* Sentrerer kontaktinformasjon i navigasjonsfeltet */
+#kontakt {
+    grid-area: kontakt;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    font-weight: normal;
+}
+
+/* Justerer posisjon og vekt for "om" lenken i navigasjonsfeltet */
+#om {
+    grid-area: om;
+    display: flex;
+    align-items: top;
+    position: relative;
+    left: 40px;
+    font-weight: normal;
+}
+
+/* Posisjonerer søkefeltet til høyre i navigasjonsfeltet */
+#søk {
+    grid-area: søk;
+    display: flex;
+    align-items: top;    
+}
+
+/* Styler søkefeltet */
+#searchInput {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+/* Styler svart boks med to elementer */
+.underbar {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "selg bruktbiler"; 
+    color: white;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    position: relative;
+    top: 31px;
+    padding-left: 100px;
+}
+
+/* Posisjonerer og styler "selg" lenken */
+#selg {
+    display: flex;
+    align-items: center;
+    grid-area: selg;
+    position: relative;
+    left: 200px;
+    font-weight: normal;
+}
+
+/* Posisjonerer og styler "bruktbiler" lenken */
+#bruktbiler {
+    grid-area: bruktbiler;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 190px;
+    font-weight: normal;
+}
+
+/* Styler a4 boks med bilde og tekst */
+.a4 {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "a4"
+    "text1";
+    padding-top: 730px;
+    width: 520px; 
+    height: 0px; 
+    position: relative;
+    left: 215px;
+    top: 150px;
+    filter:drop-shadow(0 0 0.2rem); /*Skyggeeffekt*/ 
+    border-radius: 5px;
+    z-index: -1;
+}
+
+/* Styler a4 bilde i boks */
+#a4 {
+    grid-area: a4;
+    position: relative;
+    bottom: 730px;
+    width: 520px;
+    height: auto;
+    border-radius: 2px;
+    filter:drop-shadow(0 0 0.1rem); /* Skyggeeffekt */
+}
+
+/* Styler tekst i a4 boks */
+#t1 {
+    grid-area: text1;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    bottom: 720px;
+    left: 20px;
+}
+
+/* 
+   Styler og posisjonerer bilde og tekst i r8 boks
+*/
+.r8 { 
+    filter: drop-shadow(0 0 0.2rem); /*Skyggeeffekt*/ 
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "r8"
+    "text2";
+    padding-top: 730px;
+    width: 518px; 
+    height: 0px; 
+    position: relative;
+    left: 815px;
+    bottom: 620px;
+    border-radius: 2px;  
+    z-index: -1; 
+}
+
+/* styler bilde i r8 boksen */
+#r8 {
+    grid-area: r8;
+    width: 518px;
+    height: auto;
+    position: relative;
+    bottom: 730px;
+    filter: drop-shadow(0 0 0.2rem); /* Skyggeeffekt */
+    border-radius: 2px;
+}
+
+/* Styler tekst i r8 boksen*/ 
+#t2 {
+    grid-area: text2;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    bottom: 720px;
+    left: 20px;
+}
+
+/* Stiler tt boks med bilde og tekst */
+.tt { 
+    filter: drop-shadow(0 0 0.2rem); /*Skyggeeffekt*/ 
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "tt"
+    "text2";
+    padding-top: 750px;
+    width: 518px; 
+    height: 0px; 
+    position: relative;
+    left: 815px;
+    bottom: 570px;
+    border-radius: 2px;   
+    z-index: -1;    
+}
+
+/* styler bilde i tredje boks */
+#tt {
+    grid-area: tt;
+    width: 518px;
+    height: auto;
+    position: relative;
+    bottom: 750px;
+    filter: drop-shadow(0 0 0.2rem); /* Skyggeeffekt */
+    border-radius: 2px;
+}
+
+/* Styler tekst i tt boks */
+#t3 {
+    grid-area: text2;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    bottom: 720px;
+    left: 20px;
+    z-index: -1;
+}
+
+/* 
+   Styler og posisjonerer a3 boksen 
+*/
+.a3 { 
+    filter: drop-shadow(0 0 0.2rem); /*Skyggeeffekt*/ 
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "a3"
+    "text2";
+    padding-top: 750px;
+    width: 518px; 
+    height: 0px; 
+    position: relative;
+    left: 215px;
+    bottom: 1360px;
+    border-radius: 2px;   
+    z-index: -1;
+}
+
+/* Styler bilde i a3 boks */
+#a3 {
+    grid-area: a3;
+    width: 518px;
+    height: auto;
+    position: relative;
+    bottom: 750px;
+    filter: drop-shadow(0 0 0.2rem); /* Skyggeeffekt */
+    border-radius: 2px;
+}
+
+/* Styler tekst i a3 boks */
+#t4 {
+    grid-area: text2;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    bottom: 740px;
+    left: 20px;
+}
+
+/* 
+   Styler den første knappen
+*/
+.my-button1 {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 16px;
+    text-align: center; /* Midtstiller teksten horisontalt */
+    vertical-align: middle; /* Justerer vertikal plassering */
+    cursor: pointer;
+    border: 1px solid #000;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    position: relative;
+    bottom: 20px;
+    left: 230px;
+    position: relative;
+    z-index: 2;
+}
+
+/* 
+   Styler den andre knappen
+*/
+.my-button2 {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 16px;
+    text-align: center; /* Midtstiller teksten horisontalt */
+    vertical-align: middle; /* Justerer vertikal plassering */
+    cursor: pointer;
+    border: 1px solid #000;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    position: relative;
+    bottom: 750px;
+    left: 835px;
+}
+
+/* 
+   Styler den tredje knappen
+*/
+.my-button3 {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 16px;
+    text-align: center; /* Midtstiller teksten horisontalt */
+    vertical-align: middle; /* Justerer vertikal plassering */
+    cursor: pointer;
+    border: 1px solid #000;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    position: relative;
+    bottom: 650px;
+    left: 230px;
+}
+
+/* 
+   styler den fjerde knappen
+*/
+.my-button4 {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 16px;
+    text-align: center; /* Midtstiller teksten horisontalt */
+    vertical-align: middle; /* Justerer vertikal plassering */
+}

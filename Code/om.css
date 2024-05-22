@@ -1,0 +1,190 @@
+/* Nullstiller margin og padding for alle elementer */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Hindrer horisontal scrollbar */
+body {
+    overflow-x: hidden;
+}
+
+/* Navbar-styler */
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "tittel kontakt om søk"; 
+    position: relative;
+    top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Fjerner understrekninger fra lenker og setter teksten til svart */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Kontakt-seksjon i navbar */
+#kontakt {
+    grid-area: kontakt;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    font-weight: normal;
+}
+
+/* Om-seksjon i navbar */
+#om {
+    grid-area: om;
+    display: flex;
+    align-items: top;
+    position: relative;
+    left: 40px;
+    font-weight: normal;
+}
+
+/* Søkefelt i navbar */
+#søk {
+    grid-area: søk;
+    display: flex;
+    align-items: top;    
+}
+
+/* Søkefelt styling */
+#searchInput {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+/* Nederste navigasjonslinje */
+.underbar {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "selg bruktbiler"; 
+    color: white;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    position: relative;
+    top: 31px;
+    padding-left: 100px;
+}
+
+/* Styler "Selg" i den nederste navigasjonslinjen */
+#selg {
+    display: flex;
+    align-items: center;
+    grid-area: selg;
+    position: relative;
+    left: 200px;
+    font-weight: normal;
+}
+
+/* Styler  "Bruktbiler" i den nederste navigasjonslinjen */
+#bruktbiler {
+    grid-area: bruktbiler;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 190px;
+    font-weight: normal;
+}
+
+/* Styler "Verksted" */
+#verksted {
+    grid-area: verksted;
+    display: flex;
+    justify-content: center;
+    font-weight: normal;
+}
+
+/* Bakgrunns styler */
+.bakgrunn {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "tider bakgrunn"
+        "tider bakgrunn"; 
+    color: white;
+}
+
+/* Bakgrunnsbilde-styling */
+#bakgrunn {
+    grid-area: bakgrunn;
+    width: 1006px;
+    height: auto;
+}
+
+/* Styler overskriften "Åpningstider" */
+#tider {
+    grid-area: tider;
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 240px;
+    left: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Styler informasjon om åpningstider */
+#tider2 {
+    display: flex;
+    font-size: 20px;
+    position: relative;
+    top: 250px;
+    left: 100px;
+    line-height: 30px;
+}
+
+/* Styler tabellen */
+table {
+    background-color: gainsboro;
+    border-radius: 5px;
+    position: relative;
+    left: 550px;
+    border: 1px solid lightgray;
+    font-size: 20px;    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Styler for <pre> elementer */
+pre {
+    font-weight: normal;
+}
+
+/* Styler tabellens overskrifter og celler */
+th, td {
+    padding: 12px;
+}
+
+/* Styler tabellens overskrifter */
+th {
+    border-bottom: 1px solid white;
+}
+
+/* Styler overskriften "Åpningstider" */
+#åpningstider {
+    position: relative;
+    left: 450px;
+    top: 40px;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Styler tabellen */
+.tabell {
+    position: relative;
+    top: 100px;
+    right: 20px;
+    padding-bottom: 50px;   
+}

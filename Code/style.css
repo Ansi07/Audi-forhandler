@@ -1,0 +1,239 @@
+/* Nullstiller margin og padding for alle elementer og setter maksimal høyde til 1700px */
+* {
+    margin: 0;
+    padding: 0;
+    max-height: 1700px; /* ønsket høyde */
+}
+
+/* Hindrer horisontal scrollbar */
+body {
+    overflow-x: hidden;
+}
+
+/* Navbar-styler */
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "tittel kontakt om søk"; 
+    position: relative;
+    top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Fjerner understrekninger fra lenker og setter teksten til svart */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Tittel i navbar */
+#tittel {
+    grid-area: tittel;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    left: 70px;
+}
+
+/* Kontaktseksjon i navbar */
+#kontakt {
+    grid-area: kontakt;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    font-weight: normal;
+}
+
+/* Om-seksjon i navbar */
+#om {
+    grid-area: om;
+    display: flex;
+    align-items: top;
+    position: relative;
+    left: 40px;
+    font-weight: normal;
+}
+
+/* Søkefelt i navbar */
+#søk {
+    grid-area: søk;
+    display: flex;
+    align-items: top;    
+}
+
+/* Søkefelt-styling */
+#searchInput {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+/* Nederste navigasjonslinje */
+.underbar {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "selg bruktbiler"; 
+    color: white;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    position: relative;
+    top: 31px;
+    padding-left: 100px;
+}
+
+/* Styler "Selg" i den nederste navigasjonslinjen */
+#selg {
+    display: flex;
+    align-items: center;
+    grid-area: selg;
+    position: relative;
+    left: 200px;
+    font-weight: normal;
+}
+
+/* Styler "Bruktbiler" i den nederste navigasjonslinjen */
+#bruktbiler {
+    grid-area: bruktbiler;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 190px;
+    font-weight: normal;
+}
+
+/* Bokser for innhold */
+.box {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "text empty bilde"
+        "text empty bilde"; 
+    color: white;
+    position: relative;
+    top: 31px;
+}
+
+/* Bilde i boksene */
+#bilde {
+    grid-area: bilde;
+    height: 620px;
+    width: auto;
+}
+
+/* Tekst i boksene */
+#text {
+    grid-area: text;
+    position: relative;
+    top: 250px;
+    left: 170px;
+    font-size: 17px;
+}
+
+/* Logo-styling */
+#logo {
+    height: 175px;
+    width: auto;
+    position: relative;
+    top: 20px; 
+    right: 20px; 
+}
+
+/* Stil for "Prøvekjør" - knappen */
+#prøvekjør {
+    position: relative;
+    bottom: 200px;
+    right: 5px;
+}
+
+/* RS6-boks */
+.rs6 {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "rs6"
+        "text1";
+    padding-top: 730px;
+    width: 520px; 
+    height: 0px; 
+    position: relative;
+    left: 215px;
+    top: 150px;
+    filter: drop-shadow(0 0 0.2rem); /* Skyggeeffekt */ 
+    border-radius: 5px;
+}
+
+/* RS6-bilde */
+#rs6 {
+    grid-area: rs6;
+    position: relative;
+    bottom: 730px;
+    width: 520px;
+    height: auto;
+    border-radius: 2px;
+    filter: drop-shadow(0 0 0.1rem); /* Skyggeeffekt */
+}
+
+/* Tekst inni RS6-boksen */
+#t1 {
+    grid-area: text1;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    bottom: 720px;
+    left: 20px;
+}
+
+/* RS3-boks */
+.rs3 { 
+    filter: drop-shadow(0 0 0.2rem); /* Skyggeeffekt */ 
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "rs3"
+        "text2";
+    padding-top: 730px;
+    width: 518px; 
+    height: 0px; 
+    position: relative;
+    left: 815px;
+    bottom: 580px;
+    border-radius: 2px;   
+}
+
+/* RS3-bilde */
+#rs3 {
+    grid-area: rs3;
+    width: 518px;
+    height: auto;
+    position: relative;
+    bottom: 730px;
+    filter: drop-shadow(0 0 0.2rem); /* Skyggeeffekt */
+    border-radius: 2px;
+}
+
+/* Tekst inni RS3-boksen */
+#t2 {
+    grid-area: text2;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    bottom: 720px;
+    left: 20px;
+}

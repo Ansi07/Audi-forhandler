@@ -352,4 +352,12 @@ a {
     font-size: 16px;
     text-align: center; /* Midtstiller teksten horisontalt */
     vertical-align: middle; /* Justerer vertikal plassering */
+    cursor: pointer;
+    border: 1px solid #000;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    position: relative;
+    bottom: 1520px;
+    left: 830px;
 }
